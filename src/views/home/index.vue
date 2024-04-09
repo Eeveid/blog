@@ -12,7 +12,7 @@ import "@/assets/css/home.css";
           <el-button type="primary" size="large" class="el-button">快速开始</el-button>
           <ul class="github-list">
             <li>
-              <a href="https://github.com/username/repo" class="github-link">
+              <a href="https://github.com/Eeveid" class="github-link">
                 <img src="@/assets/images/github.svg" alt="GitHub" class="github-icon">
               </a>
             </li>
