@@ -1,0 +1,80 @@
+/* header内容开始 */
+.layout-header {
+    height: 50px;
+    padding: 0 30px;
+    margin: 0;
+    align-items: center;
+    align-content: center;
+    position: relative; /* 设置为固定定位 */
+    top: 0; /* 距离顶部的距离为0 */
+    left: 0; /* 距离左侧的距离为0 */
+    width: 100%; /* 宽度设置为100%，以便覆盖整个视口宽度 */
+    z-index: 10; /* 设置一个较高的z-index值以确保header在其他内容之上 */
+}
+
+
+
+.no-list-style li {
+    display: inline; /* 使列表项横向排列 */
+    margin-right: 30px; /* 设置列表项之间的间距，可根据需要调整 */
+
+}
+
+/* 为了确保<router-link>元素也能横向排列，可以添加以下样式 */
+.no-list-style li > router-link {
+    display: inline-block; /* 使<router-link>元素不独占一行 */
+    vertical-align: middle; /* 垂直居中对齐文本 */
+}
+
+.no-underline {
+    text-decoration: none; /* 移除下划线 */
+    color: inherit; /* 保持与周围文本相同的颜色 */
+}
+
+.no-list-style li > router-link.no-underline {
+    display: inline-block;
+    vertical-align: middle;
+    text-decoration: none;
+
+}
+
+.logo-menu,.active{
+    float: left;
+
+}
+
+.active{
+    padding-left: 0;
+}
+
+.login-menu{
+    float: right;
+}
+
+@font-face {
+    font-family: logo-font;
+    src: url('@/assets/font/Chillax-Semibold.otf');
+}
+
+.logo-menu {
+    font-family: logo-font,serif;
+    font-size: 40px;
+    color: orange;
+}
+/* header内容结束 */
+
+
+
+/* main内容开始 */
+.common-layout,.el-container,.is-vertical{
+    height: 100%;
+}
+
+.layout-main {
+    padding: 0;
+    position: relative;
+    z-index: 10; /* 确保header和main在section之上 */
+    overflow-y: auto; /* 允许垂直滚动 */
+}
+
+/* main内容结束 */
